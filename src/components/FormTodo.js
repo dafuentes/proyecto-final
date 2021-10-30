@@ -43,7 +43,7 @@ const FormTodo = ({ handleAddItem }) => {
           </button>
         </div>
         {error && (
-          <p className="text-red-500 font-bold text-xs text-left mt-2 ">
+          <p className="text-red-500 font-bold text-xs text-left mt-4 ">
             {error}
           </p>
         )}
