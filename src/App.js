@@ -15,6 +15,7 @@ function App() {
           <h1 className="text-2xl font-bold my-4">
             Proyecto Final Aseguramiento Calidad de Software en Heroku
           </h1>
+          <p className="text-lg font-bold my-4">Dario Fuentes</p>
           <FormTodo handleAddItem={handleAddItem} />
           <TaskList list={list} setList={setList} />
         </div>
