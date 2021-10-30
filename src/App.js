@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import FormTodo from "./components/FormTodo";
+import TaskList from "./components/TaskList";
 
 function App() {
+  const [list, setList] = useState([]);
+
+  const handleAddItem = (addItem) => {
+    setList([...list, addItem]);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-12 bg-gray-100">
+      <div className="max-w-md w-full space-y-8 bg-white shadow overflow-hidden sm:rounded-lg">
+        <div className="px-10 py-5">
+          <h1 className="text-2xl font-bold my-4">Lista de Tareas</h1>
+          <FormTodo handleAddItem={handleAddItem} />
+          <TaskList list={list} setList={setList} />
+        </div>
+      </div>
     </div>
   );
 }
