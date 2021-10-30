@@ -6,7 +6,7 @@ const Checkbox = (props) => {
     data: { id, description, done },
   } = props;
   return (
-    <div class="mt-4 space-y-4">
+    <li className="mt-4 space-y-4">
       <div className="flex items-start">
         <div className="flex items-center h-5">
           <input
@@ -20,7 +20,7 @@ const Checkbox = (props) => {
         </div>
         <div className="ml-3 text-sm">
           <label
-            for={id}
+            htmlFor={id}
             className={
               done
                 ? "line-through font-medium text-gray-400"
@@ -31,7 +31,7 @@ const Checkbox = (props) => {
           </label>
         </div>
       </div>
-    </div>
+    </li>
   );
 };
 

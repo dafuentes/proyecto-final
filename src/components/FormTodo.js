@@ -27,6 +27,7 @@ const FormTodo = ({ handleAddItem }) => {
       <div className="mx-2">
         <div className="flex flex-row space-x-4">
           <input
+            data-testid={"text-input"}
             type="text"
             className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
             placeholder="Ingresa la tarea"
@@ -34,6 +35,7 @@ const FormTodo = ({ handleAddItem }) => {
             onChange={(e) => setDescription(e.target.value)}
           />
           <button
+            data-testid={"add-button"}
             type="submit"
             className="group relative flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
