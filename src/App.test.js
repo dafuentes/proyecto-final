@@ -10,7 +10,7 @@ Enzyme.configure({ adapter: new Adapter() });
 test("Mostrar error si no ingresan una tarea", () => {
   render(<App />);
   fireEvent.click(screen.getByTestId("add-button"));
-  const errorMessage = screen.getByText("Debes ingresar una tarea.");
+  const errorMessage = screen.getByText("Debes ingresar una rea.");
   expect(errorMessage).toBeInTheDocument();
 });
 
