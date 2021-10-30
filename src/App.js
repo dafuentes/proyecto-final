@@ -13,7 +13,7 @@ function App() {
       <div className="max-w-md w-full space-y-8 bg-white shadow overflow-hidden sm:rounded-lg">
         <div className="px-10 py-5">
           <h1 className="text-2xl font-bold my-4">
-            Proyecto Final Aseguramiento Calidad de Software
+            Proyecto Final Aseguramiento Calidad de Software en Heroku
           </h1>
           <FormTodo handleAddItem={handleAddItem} />
           <TaskList list={list} setList={setList} />
